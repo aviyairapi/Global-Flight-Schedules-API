@@ -8,13 +8,13 @@ Global airport timetable data with real-time status updates
 [Aviyair’s Global Flight Schedules API](https://aviyair.com/global-flight-schedules-api/) has useful airport timetable data with real-time updates for airports around the world. The REST structure allows fetching the in JSON easily with GET requests and other formats may be added in the future. 
 The API provides real-time airport schedule data with static data such as the flight number, airline, departure and arrival airports etc. as well as updated, real-time data such as flight status, delay, scheduled/estimated/actual departure and arrival airport, gate, baggage belt and more. 
 
-Get complete airport schedule data in a single call or narrow down the data to flights of a certain airline, flight number, status and others.
+Get complete real-time airport schedule data in a single call or narrow down the data to flights of a certain airline, flight number, status and others.
 
 --------
 
 ## Main Endpoint and Filters with Description
 
-**GET** https://data.aviyair.com/data/v1/liveschedule?key=[APIKEY]&airport_aita=IAD&type=departure
+**GET** `https://data.aviyair.com/data/v1/liveschedule?key=[APIKEY]&airport_aita=IAD&type=departure`
 
 Airport IATA code and schedule type (can be either departure or arrival) are obligatory fields. You can add the below filters to narrow down the flights within the schedule
 
